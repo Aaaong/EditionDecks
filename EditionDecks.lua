@@ -2,9 +2,8 @@
 -- A standalone mod adding one deck per edition.
 --
 -- CREDIT: the idea, the game logic (edition locking, forced editions on new cards, the Lovely patches)
--- and the original "Edition Deck" come from Cryptid by MathIsFun_, Cryptid and Balatro Discords
--- (https://github.com/SpectralPack/Cryptid), licensed under GPL-3.0. This mod is derived from it and is
--- distributed under the same license (see LICENSE). The sprites are created with generative AI.
+-- and the original "Edition Deck" come from SpectralPack/Cryptid (https://github.com/SpectralPack/Cryptid)
+-- The sprites are created with generative AI.
 
 if not EditionDecks then
 	EditionDecks = {}

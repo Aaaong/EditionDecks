@@ -1,4 +1,4 @@
--- forced-edition logic adapted from Cryptid by MathIsFun_, Cryptid and Balatro Discords, GPL-3.0
+-- forced-edition logic adapted from SpectralPack/Cryptid (https://github.com/SpectralPack/Cryptid)
 
 function EditionDecks.safe_get(t, ...)
 	local current = t
