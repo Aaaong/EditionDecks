@@ -1,0 +1,28 @@
+[manifest]
+version = "1.0.0"
+dump_lua = true
+priority = 0
+
+[[patches]]
+[patches.pattern]
+target = "functions/common_events.lua"
+pattern = "card.playing_card = G.playing_card"
+position = "after"
+payload = '''if G.GAME.modifiers.edeck_force_edition then card:set_edition(G.GAME.modifiers.edeck_force_edition,true,true) end'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = "tag.lua"
+pattern = "local _applied = nil"
+position = "after"
+payload = '''if EditionDecks.forced_edition() then self:nope() end'''
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = "card.lua"
+pattern = "for k, v in pairs(G.P_CENTER_POOLS.Edition) do"
+position = "after"
+payload = "if G.GAME.modifiers.edeck_no_edition_price then break end"
+match_indent = true

@@ -1,0 +1,16 @@
+{
+	"id": "EditionDecks",
+	"name": "Edition Decks",
+	"display_name": "Edition Decks",
+	"author": ["Aong", "Cryptid"],
+	"description": "Adds deck that applies edition to everything (One deck per edition). Based on the Edition Deck from Cryptid by MathIsFun_, Cryptid and Balatro Discords. Sprites created with generative AI.",
+	"prefix": "edeck",
+	"main_file": "EditionDecks.lua",
+	"priority": 0,
+	"badge_colour": "5b7fa6",
+	"badge_text_colour": "FFFFFF",
+	"version": "1.0.0",
+	"dependencies": [
+		"Steamodded (>=26.829.0)"
+	]
+}
